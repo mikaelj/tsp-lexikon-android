@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="decaf-annotations">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tsplexikonandroid/libs/decaf-annotations.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="crouton_library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/tsplexikonandroid/libs/crouton_library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
