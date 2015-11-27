@@ -23,7 +23,8 @@ package com.bjerva.tsplex.adapters;
 import java.util.HashSet;
 import java.util.List;
 
-import org.holoeverywhere.ArrayAdapter;
+//import org.holoeverywhere.ArrayAdapter;
+import android.widget.ArrayAdapter;
 
 import com.bjerva.tsplex.R;
 import com.bjerva.tsplex.R.id;

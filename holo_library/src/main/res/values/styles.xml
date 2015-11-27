@@ -603,7 +603,8 @@
     <style name="Holo.TextView.SpinnerItem.Light">
         <item name="android:textAppearance">@style/Holo.TextAppearance.TextView.SpinnerItem.Light</item>
     </style>
-    <style name="Holo.Theme" parent="Theme.Sherlock">
+    <!-- <style name="Holo.Theme" parent="Theme.Sherlock"> -->
+    <style name="Holo.Theme" parent="">
         <!--Include block: HoloDark-->
         <!--Include block: BaseDark-->
         <!--Include block: Base-->
@@ -807,8 +808,10 @@
         <item name="windowContentOverlay">@null</item>
         <!--End of block Fullscreen-->
     </style>
-    <style name="Holo.Theme.Light" parent="Theme.Sherlock.Light">
-        <!--Include block: HoloLight-->
+    <!-- <style name="Holo.Theme.Light" parent="Theme.Sherlock.Light"> -->
+    <style name="Holo.Theme.Light" parent="">
+
+    <!--Include block: HoloLight-->
         <!--Include block: BaseLight-->
         <!--Include block: Base-->
         <item name="activatedBackgroundIndicator">@drawable/activated_background_holo</item>
@@ -950,7 +953,8 @@
         <!--End of block HoloLight-->
         <item name="holoActionBarTheme">light</item>
     </style>
-    <style name="Holo.Theme.Light.DarkActionBar" parent="Theme.Sherlock.Light.DarkActionBar">
+    <!-- <style name="Holo.Theme.Light.DarkActionBar" parent="Theme.Sherlock.Light.DarkActionBar"> -->
+    <style name="Holo.Theme.Light.DarkActionBar" parent="">
         <!--Include block: HoloLight-->
         <!--Include block: BaseLight-->
         <!--Include block: Base-->

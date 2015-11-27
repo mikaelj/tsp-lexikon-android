@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Holo.Theme" parent="Theme.Sherlock">
+    <!-- <style name="Holo.Theme" parent="Theme.Sherlock"> -->
+    <style name="Holo.Theme" parent="">
         <!--Include block: BaseDark-->
         <!--Include block: Base-->
         <item name="activatedBackgroundIndicator">@drawable/activated_background_holo</item>
@@ -75,7 +76,8 @@
         <!--End of block BaseDark-->
         <item name="holoActionBarTheme">dark</item>
     </style>
-    <style name="Holo.Theme.Light" parent="Theme.Sherlock.Light">
+    <!-- <style name="Holo.Theme.Light" parent="Theme.Sherlock.Light"> -->
+    <style name="Holo.Theme.Light" parent="">
         <!--Include block: BaseLight-->
         <!--Include block: Base-->
         <item name="activatedBackgroundIndicator">@drawable/activated_background_holo</item>
@@ -150,7 +152,8 @@
         <!--End of block BaseLight-->
         <item name="holoActionBarTheme">light</item>
     </style>
-    <style name="Holo.Theme.Light.DarkActionBar" parent="Theme.Sherlock.Light.DarkActionBar">
+    <!-- <style name="Holo.Theme.Light.DarkActionBar" parent="Theme.Sherlock.Light.DarkActionBar"> -->
+    <style name="Holo.Theme.Light.DarkActionBar" parent="">
         <!--Include block: BaseLight-->
         <!--Include block: Base-->
         <item name="activatedBackgroundIndicator">@drawable/activated_background_holo</item>

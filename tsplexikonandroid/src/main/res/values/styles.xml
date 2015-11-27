@@ -4,14 +4,15 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppBaseTheme" parent="Holo.Theme.Light.DarkActionBar">
+    <!-- <style name="AppBaseTheme" parent="Holo.Theme.Light.DarkActionBar"> -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
         <!-- item name="vpiTitlePageIndicatorStyle">@style/Widget.TitlePageIndicator</item> -->
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
         <!--  item name="vpiTabTextStyle">@style/Widget.TabPageIndicator.Text</item>-->
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
+    <style name="AppTheme" parent="@style/AppBaseTheme">
         <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
         <!-- item name="vpiTabTextStyle">@style/Widget.TabPageIndicator.Text</item> -->
     </style>
