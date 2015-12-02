@@ -1,13 +1,12 @@
 <component name="libraryTable">
   <library name="support-v13-23.1.1">
     <CLASSES>
-      <root url="file:///tmp/tsp/view_pager_library/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/res" />
-      <root url="jar:///tmp/tsp/view_pager_library/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/jars/classes.jar!/" />
-      <root url="jar:///tmp/tsp/view_pager_library/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/jars/libs/internal_impl-23.1.1.jar!/" />
+      <root url="jar:///tmp/tsp/tsplexikonandroid/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/jars/libs/internal_impl-23.1.1.jar!/" />
+      <root url="file:///tmp/tsp/tsplexikonandroid/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/res" />
+      <root url="jar:///tmp/tsp/tsplexikonandroid/intermediates/exploded-aar/com.android.support/support-v13/23.1.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
-      <root url="jar:///opt/Android/Sdk/extras/android/m2repository/com/android/support/support-v13/23.1.1/support-v13-23.1.1-sources.jar!/" />
       <root url="jar:///opt/android-sdk/extras/android/m2repository/com/android/support/support-v13/23.1.1/support-v13-23.1.1-sources.jar!/" />
     </SOURCES>
   </library>

@@ -27,14 +27,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-//import org.holoeverywhere.LayoutInflater;
-import android.view.LayoutInflater;
-
+import org.holoeverywhere.LayoutInflater;
 
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;

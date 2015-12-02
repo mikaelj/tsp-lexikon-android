@@ -24,11 +24,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-//import org.holoeverywhere.LayoutInflater;
-//import org.holoeverywhere.app.ListFragment;
-
-import android.view.LayoutInflater;
-import android.support.v4.app.ListFragment;
+import org.holoeverywhere.LayoutInflater;
+import org.holoeverywhere.app.ListFragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -74,22 +71,18 @@ public class SignListFragment extends ListFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState){
 		myView = inflater.inflate(R.layout.sign_list_fragment, container, false);
-        Log.i("SignListFragment.onCreatedView()", "start");
 		//setHasOptionsMenu(true);
 		return myView;
 	}
 
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState){
-		Log.i("SignListFragment.onActivityCreated()", "start");
 		super.onActivityCreated(savedInstanceState);
 		ma = (MainActivity) getActivity();
 
-
 		mGaInstance = GoogleAnalytics.getInstance(ma);
 		mGaTracker = mGaInstance.getTracker("UA-39295928-1");
-
-        Log.i("onActivityCreated()", "isDoneLoading()? " + ma.isDoneLoading());
+		
 		if(ma.isDoneLoading()){
 			Log.d(TAG, "Loading signs here");
 			loadSigns();

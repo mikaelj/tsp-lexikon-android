@@ -29,9 +29,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-//import org.holoeverywhere.app.Activity;
-import android.support.v4.app.FragmentActivity;
-import android.app.Activity;
+import org.holoeverywhere.app.Activity;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
@@ -43,7 +41,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Display;
 import android.widget.ListView;
@@ -63,7 +60,7 @@ import com.google.gson.reflect.TypeToken;
 import de.keyboardsurfer.android.widget.crouton.Crouton;
 import de.keyboardsurfer.android.widget.crouton.Style;
 
-public class MainActivity extends AppCompatActivity { // FragmentActivity {
+public class MainActivity extends Activity {
 
 	@SuppressWarnings("unused")
 	private static final String TAG = "Main Activity";

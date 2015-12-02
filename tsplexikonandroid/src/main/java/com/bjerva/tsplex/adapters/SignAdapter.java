@@ -24,10 +24,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-//import org.holoeverywhere.app.Activity;
-//import org.holoeverywhere.preference.SharedPreferences;
-import android.app.Activity;
-import android.content.SharedPreferences;
+import org.holoeverywhere.app.Activity;
+import org.holoeverywhere.preference.SharedPreferences;
 
 import com.bjerva.tsplex.R;
 import com.bjerva.tsplex.R.id;

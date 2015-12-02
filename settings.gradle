@@ -1,5 +1,6 @@
 include ':circular_progress_library'
 include ':drag_sort_library'
+include ':holo_library'
 include ':undo_library'
 include ':view_pager_library'
 include ':tsplexikonandroid'

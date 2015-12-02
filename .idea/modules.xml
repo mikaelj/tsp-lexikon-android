@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/circular_progress_library/circular_progress_library.iml" filepath="$PROJECT_DIR$/circular_progress_library/circular_progress_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/drag_sort_library/drag_sort_library.iml" filepath="$PROJECT_DIR$/drag_sort_library/drag_sort_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/holo_library/holo_library.iml" filepath="$PROJECT_DIR$/holo_library/holo_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/tsp.iml" filepath="$PROJECT_DIR$/tsp.iml" />
       <module fileurl="file://$PROJECT_DIR$/tsplexikonandroid/tsplexikonandroid.iml" filepath="$PROJECT_DIR$/tsplexikonandroid/tsplexikonandroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/undo_library/undo_library.iml" filepath="$PROJECT_DIR$/undo_library/undo_library.iml" />

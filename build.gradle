@@ -12,5 +12,4 @@ allprojects {
     repositories {
         jcenter()
     }
-    buildDir = "/tmp/${rootProject.name}/${project.name}"
 }

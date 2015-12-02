@@ -25,20 +25,14 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 
-//import org.holoeverywhere.LayoutInflater;
-//import org.holoeverywhere.app.Activity;
-//import org.holoeverywhere.app.Fragment;
-//import org.holoeverywhere.preference.SharedPreferences;
-
-import android.view.LayoutInflater;
-import android.app.Activity;
-//import android.app.Fragment;
-import android.content.SharedPreferences;
+import org.holoeverywhere.LayoutInflater;
+import org.holoeverywhere.app.Activity;
+import org.holoeverywhere.app.Fragment;
+import org.holoeverywhere.preference.SharedPreferences;
 
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;

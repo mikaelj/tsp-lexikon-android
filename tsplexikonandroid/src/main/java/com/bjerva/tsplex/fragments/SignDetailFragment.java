@@ -22,17 +22,10 @@ package com.bjerva.tsplex.fragments;
 
 import java.util.List;
 
-//import org.holoeverywhere.LayoutInflater;
-//import org.holoeverywhere.app.Activity;
-//import org.holoeverywhere.app.Fragment;
-//import org.holoeverywhere.preference.SharedPreferences;
-
-import android.view.LayoutInflater;
-import android.app.Activity;
-//import android.app.Fragment;
-import android.content.SharedPreferences;
-
-
+import org.holoeverywhere.LayoutInflater;
+import org.holoeverywhere.app.Activity;
+import org.holoeverywhere.app.Fragment;
+import org.holoeverywhere.preference.SharedPreferences;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -54,7 +47,6 @@ import android.widget.MediaController;
 import android.widget.RelativeLayout.LayoutParams;
 import android.widget.VideoView;
 
-/*
 import com.actionbarsherlock.internal.nineoldandroids.animation.Animator;
 import com.actionbarsherlock.internal.nineoldandroids.animation.Animator.AnimatorListener;
 import com.actionbarsherlock.internal.nineoldandroids.animation.ObjectAnimator;
@@ -63,21 +55,6 @@ import com.actionbarsherlock.internal.nineoldandroids.animation.ValueAnimator.An
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-*/
-
-import android.animation.Animator;
-import android.animation.Animator.AnimatorListener;
-import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
-import android.animation.ValueAnimator.AnimatorUpdateListener;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.ActionBarActivity;
-
 import com.bjerva.tsplex.MainActivity;
 import com.bjerva.tsplex.R;
 import com.bjerva.tsplex.adapters.SeparatedListAdapter;
@@ -156,9 +133,8 @@ public class SignDetailFragment extends Fragment {
 
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        ActionBarActivity aba = (ActionBarActivity)getActivity();
-		aba.getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-		aba.getSupportActionBar().setHomeButtonEnabled(false);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+		getSupportActionBar().setHomeButtonEnabled(false);
 
 		if(mMenu == null){
 			mMenu = menu;
@@ -180,8 +156,7 @@ public class SignDetailFragment extends Fragment {
 	}
 
 	@Override
-	//public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
-	public boolean onOptionsItemSelected(MenuItem item) {
+	public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
 		//TODO: Clean this up
 		switch (item.getItemId()) {
 		case MainActivity.ID_FAV_BUTTON:

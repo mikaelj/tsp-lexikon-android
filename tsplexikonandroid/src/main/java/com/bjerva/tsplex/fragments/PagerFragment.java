@@ -22,19 +22,14 @@ package com.bjerva.tsplex.fragments;
 
 import java.util.Locale;
 
-//import org.holoeverywhere.LayoutInflater;
-//import org.holoeverywhere.app.Fragment;
-import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
-import android.support.v4.app.Fragment;
-//import android.app.Fragment;
+import org.holoeverywhere.LayoutInflater;
+import org.holoeverywhere.app.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.support.v7.app.ActionBarActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -43,15 +38,9 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-/*
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
-*/
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
-
 import com.bjerva.tsplex.MainActivity;
 import com.bjerva.tsplex.R;
 import com.bjerva.tsplex.models.SimpleGson;
@@ -78,9 +67,6 @@ public class PagerFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState){
-
-		Log.i("onCreateView", "Init");
-
 		mView = inflater.inflate(R.layout.pager_fragment, container, false);
 		setHasOptionsMenu(true);
 		return mView;
@@ -105,18 +91,14 @@ public class PagerFragment extends Fragment {
 		mIndicator = (TabPageIndicator) ma.findViewById(R.id.indicator);
 		mIndicator.setViewPager(mPager);
 		mIndicator.setOnPageChangeListener(mOnPageChangeListener);
-
-		Log.i("PaperFragment: onActivityCreated", "Created");
 	}
 
 	@Override
 	public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-		((AppCompatActivity)getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(false);
-		((AppCompatActivity)getActivity()).getSupportActionBar().setHomeButtonEnabled(false);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(false);
+		getSupportActionBar().setHomeButtonEnabled(false);
 
 		mMenu = menu;
-		Log.i("onCreateOptionsMenu()", "mMenu set to " + menu.toString());
-
 		if(previousFrag == 0){
 			mMenu.add(0, MainActivity.ID_SEARCH_BUTTON, 1, R.string.search).setIcon(R.drawable.ic_action_search).setActionView(R.layout.search_view).setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM | MenuItem.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW);
 		} else if (previousFrag == 1){
@@ -128,7 +110,7 @@ public class PagerFragment extends Fragment {
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
+	public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item) {
 		final Locale swedishLocale = new Locale("sv", "SE");
 		InputMethodManager imm;
 		switch (item.getItemId()) {
@@ -144,9 +126,7 @@ public class PagerFragment extends Fragment {
 				public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 				}
 				public void onTextChanged(CharSequence cs, int start, int before, int count) {
-
-					Log.i("Search Button", "value of signListFragment: " + signListFragment.toString());
-                    signListFragment.getmAdapter().getFilter().filter(cs);
+					signListFragment.getmAdapter().getFilter().filter(cs);
 					try {
 						String word = ((SimpleGson) signListFragment.getListView().getItemAtPosition(0)).getWord();
 						signListFragment.getTextHeader().setText(word.substring(0, 1).toUpperCase(swedishLocale));
@@ -158,7 +138,7 @@ public class PagerFragment extends Fragment {
 
 			});
 			search.setText("");
-			imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+			imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 			imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
 			break;
 		case MainActivity.ID_COLLAPSE_BUTTON:
