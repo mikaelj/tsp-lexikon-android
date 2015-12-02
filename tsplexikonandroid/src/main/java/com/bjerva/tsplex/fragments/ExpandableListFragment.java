@@ -1,6 +1,8 @@
 package com.bjerva.tsplex.fragments;
 
-import org.holoeverywhere.app.Fragment;
+//import org.holoeverywhere.app.Fragment;
+//import android.app.Fragment;
+import android.support.v4.app.Fragment;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -272,7 +274,7 @@ public class ExpandableListFragment extends Fragment
                             "'android.R.id.list'");
                 }
                 throw new RuntimeException("Content has view with id attribute 'android.R.id.list' " +
-                        "that is not a ExpandableListView class");
+                        "that is not a ExpandableListView class - it's a " + rawListView.getClass().getName());
             }
             mList = (ExpandableListView) rawListView;
             if (mEmptyView != null) {
